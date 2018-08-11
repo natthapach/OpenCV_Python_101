@@ -48,6 +48,7 @@ WIDTH_T = 3
 LINE_TYPE_1 = cv2.LINE_AA  # make text from array of line
 LINE_TYPE_2 = cv2.LINE_8    # make text from array of rectangle
 cv2.putText(image_obj, TEXT, PT_LB, FONT, FONT_SIZE, COLOR_T, WIDTH_T, LINE_TYPE_1)
+
 # show image
 TITLE = 'image'
 cv2.imshow(TITLE, image_obj)
