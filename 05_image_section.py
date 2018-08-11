@@ -4,6 +4,7 @@ import numpy as np
 FILE_NAME = '1.jpg'
 img = cv2.imread(FILE_NAME, cv2.IMREAD_COLOR)
 
+# img[y1:y2, x1:x2]
 # select part of image
 roi = img[0:500, 0:500]   # region of image
 
