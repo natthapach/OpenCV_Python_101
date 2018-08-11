@@ -8,8 +8,9 @@ WINDOW_TITLE_1 = 'Webcam Color'
 WINDOW_TITLE_2 = 'Webcam Gray'
 
 while True:
-  ret, frame = cap.read()
+  ret, frame = cap.read()   # ret is True when read complete, frame is image
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
   cv2.imshow(WINDOW_TITLE_1, frame)
   cv2.imshow(WINDOW_TITLE_2, gray)
 
