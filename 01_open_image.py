@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
 import matplotlib as plt
+import config
 
-IMAGE_NAME = '1.jpg'
+
+IMAGE_NAME = config.IMG_PATH + '1.jpg'
 image_obj_1 = cv2.imread(IMAGE_NAME, cv2.IMREAD_GRAYSCALE)  # open image in gray scale
 image_obj_2 = cv2.imread(IMAGE_NAME, cv2.IMREAD_COLOR)  # open image in color mode
 

@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
-
+import config
 
 RED = 255
 GREEN = 255
 BLUE = 255
 
 # open image
-IMAGE_NAME = '1.jpg'
+IMAGE_NAME = config.IMG_PATH + '1.jpg'
 image_obj = cv2.imread(IMAGE_NAME, cv2.IMREAD_COLOR)
 
 # draw line

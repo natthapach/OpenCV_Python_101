@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
+import config
 
-FILE_NAME = '1.jpg'
+FILE_NAME = config.IMG_PATH + '1.jpg'
 img = cv2.imread(FILE_NAME, cv2.IMREAD_COLOR)
 
 # img[y1:y2, x1:x2]
